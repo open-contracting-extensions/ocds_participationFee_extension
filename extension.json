@@ -1,0 +1,1 @@
+{"name":"ocds_upgrade_33","desription":"This extension exists to stage the proposal from [#33](https://github.com/open-contracting/standard/issues/33) to add a ```participationFees``` property to the ```tender``` section. "}
