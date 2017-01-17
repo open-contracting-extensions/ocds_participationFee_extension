@@ -2,7 +2,11 @@
 
 ## Background
 
-Whilst Open Contracting principles would encourage governments to make tender documents available free of charge, this is not always the case. Sometimes documents are only available on application or on payment of a fee. Fees can also apply to submit bids or to the winning bidder.
+There are a number of cases where there may be costs to access documents for, or to participate within, a tender process. 
+
+Potential bidders will want to be aware of the fees that a process might involve.
+
+Procurement monitors may wish to ensure that participation fees are within legal parameters (often set as a fixed maximum, or a percentage of total contract value), or to monitor how participation fees are being used.
 
 ## Extension fields
 
@@ -10,17 +14,19 @@ This extension adds a ```participationFees``` field to the ```tender``` section 
 
 The ```participationFees``` field is an array of ```participationFee``` building blocks.
 
-The ```participationFee``` building block is made up of two fields:
+The ```participationFee``` building block is made up of three fields:
 
 * ```type``` - a value from the ```participationFeeType``` codelist, describing the type of the fee
 * ```value``` - the amount and currency of the fee
+* ```description``` - an optional field with more information on the fee requirements. For example, sometimes a document fee is only applicable to the hard copy of the documents.
 
 ## Extension codelists
 
 This extension adds **closed** ```participationFeeType``` codelist with the following codes:
 
 * document - a fee payable for access to bidding documents
-* submission - a fee payable for the submission of bids
+* deposit - a refundable fee payable for the submission of bids
+* submission - a non-refundable fee payable for the submission of bids
 * win - a fee payable by the winning bidder
 
 ## Example
@@ -34,17 +40,26 @@ The following JSON snippet models a contracting process where fees are applicabl
           "type":"document",
           "value": {
                "currency":"GBP",
-               "amount":8.00
+               "amount":8.00,
+               "description":"Fee payable for both soft and hard copies of documents. "
+
            } 
       {
           "type":"submission",
           "value": {
                "currency":"GBP",
-               "amount":10.00
+               "amount":10.00,
+               "description":"Fee payable within e-procurement system."
            } 
     ]
 }
 ```
+
+## Usage notes
+
+In some cases, a fee may be levied for 'official copies' of procurement documents (although copies may also be available freely online), and bidders required to prove they have paid for an official copy of the documents as part of their submission. 
+
+In this case, the fee should be modelled as a **submission** fee, as submission is only possible when this document access fee has been paid. 
 
 ## To do
 
