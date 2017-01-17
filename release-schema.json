@@ -13,6 +13,7 @@
           ],
           "enum": [
             "document",
+            "deposit",
             "submission",
             "win",
             null
@@ -21,7 +22,22 @@
         },
         "value": {
           "$ref": "#/definitions/Value"
-        }
+        },
+        "description": {
+          "title": "Description",
+          "description": "Optional information about the way in which fees are levied, or the exact nature of the fees.",
+          "type": [
+            "array",
+            "null"
+          ],
+          "enum": [
+            "document",
+            "submission",
+            "win",
+            null
+          ],
+          "mergeStrategy": "ocdsVersion"
+        },
       }
     },
     "Tender": {
