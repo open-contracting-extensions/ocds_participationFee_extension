@@ -34,24 +34,27 @@ This extension adds **closed** ```participationFeeType``` codelist with the foll
 The following JSON snippet models a contracting process where fees are applicable for both access to documents and submission of bids:
 
 ```JSON
-"tender": {
+{
+  "tender": {
     "participationFees": [
       {
-          "type":"document",
-          "value": {
-               "currency":"GBP",
-               "amount":8.00,
-               "description":"Fee payable for both soft and hard copies of documents. "
-
-           } 
+        "type": "document",
+        "value": {
+          "currency": "GBP",
+          "amount": 8.00,
+          "description": "Fee payable for both soft and hard copies of documents. "
+        }
+      },
       {
-          "type":"submission",
-          "value": {
-               "currency":"GBP",
-               "amount":10.00,
-               "description":"Fee payable within e-procurement system."
-           } 
+        "type": "submission",
+        "value": {
+          "currency": "GBP",
+          "amount": 10.00,
+          "description": "Fee payable within e-procurement system."
+        }
+      }
     ]
+  }
 }
 ```
 
