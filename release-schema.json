@@ -17,8 +17,7 @@
             "submission",
             "win",
             null
-          ],
-          "mergeStrategy": "ocdsVersion"
+          ]
         },
         "value": {
           "$ref": "#/definitions/Value"
@@ -35,9 +34,8 @@
             "submission",
             "win",
             null
-          ],
-          "mergeStrategy": "ocdsVersion"
-        },
+          ]
+        }
       }
     },
     "Tender": {
