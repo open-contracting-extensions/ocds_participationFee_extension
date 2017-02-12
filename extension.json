@@ -1,1 +1,4 @@
-{"name":"ocds_upgrade_33","desription":"This extension exists to stage the proposal from [#33](https://github.com/open-contracting/standard/issues/33) to add a ```participationFees``` property to the ```tender``` section. "}
+{
+  "name": "Participation Fees",
+  "description": "Where a tender process involves payment of fees to access documents, submit a proposal, or be awarded a contract, this extension can be used to provide fee details."
+}
