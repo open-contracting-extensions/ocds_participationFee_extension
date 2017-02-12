@@ -43,7 +43,7 @@ The following JSON snippet models a contracting process where fees are applicabl
                "amount":8.00,
                "description":"Fee payable for both soft and hard copies of documents. "
 
-           } 
+           }, 
       {
           "type":"submission",
           "value": {
