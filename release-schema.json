@@ -1,6 +1,6 @@
 {
   "definitions": {
-    "participationFee": {
+    "ParticipationFee": {
       "title": "Participation fee",
       "type": "object",
       "properties": {
@@ -11,13 +11,16 @@
             "array",
             "null"
           ],
-          "enum": [
-            "document",
-            "deposit",
-            "submission",
-            "win",
-            null
-          ]
+          "items": {
+            "type": "string",
+            "enum": [
+              "document",
+              "deposit",
+              "submission",
+              "win",
+              null
+            ]
+          }
         },
         "value": {
           "$ref": "#/definitions/Value"
@@ -25,16 +28,15 @@
         "description": {
           "title": "Description",
           "description": "Optional information about the way in which fees are levied, or the exact nature of the fees.",
-          "type": [
-            "array",
-            "null"
-          ],
-          "enum": [
-            "document",
-            "submission",
-            "win",
-            null
-          ]
+          "type": "string"
+        },
+        "methodOfPayment":{
+          "title":"Method(s) of payment",
+          "description":"Optional information about the way in which fees can be paid.",
+          "type":["array","null"],
+          "items":{
+            "type":"string"
+          }
         }
       }
     },
@@ -46,7 +48,7 @@
           "type": "array",
           "mergeStrategy": "ocdsVersion",
           "items": {
-            "$ref": "#/definitions/participationFee"
+            "$ref": "#/definitions/ParticipationFee"
           },
           "uniqueItems": true
         }
