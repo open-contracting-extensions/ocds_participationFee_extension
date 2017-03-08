@@ -42,19 +42,19 @@ The following JSON snippet models a contracting process where fees are applicabl
         "type": "document",
         "value": {
           "currency": "GBP",
-          "amount": 8.00,
-          "description": "Fee payable for both soft and hard copies of documents.",
+          "amount": 8.00
+        },
+        "description": "Fee payable for both soft and hard copies of documents.",
           "methodOfPayment":["electronic","cheque"]
-        }
       },
       {
         "type": ["submission"],
         "value": {
           "currency": "GBP",
-          "amount": 10.00,
-          "description": "Fee payable within e-procurement system.",
-          "methodOfPayment":["electronic"]
-        }
+          "amount": 10.00
+        },
+        "description": "Fee payable within e-procurement system.",
+        "methodOfPayment":["electronic"]
       }
     ]
   }
