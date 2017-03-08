@@ -19,6 +19,7 @@ The ```participationFee``` building block is made up of three fields:
 * ```type``` - a value from the ```participationFeeType``` codelist, describing the type of the fee
 * ```value``` - the amount and currency of the fee
 * ```description``` - an optional field with more information on the fee requirements. For example, sometimes a document fee is only applicable to the hard copy of the documents.
+* ```methodOfPayment``` - an optional field providing information on methods of payment accepted for the documentation. This is currently an array of strings, but an open codelist may be introduced in future. 
 
 ## Extension codelists
 
@@ -42,15 +43,17 @@ The following JSON snippet models a contracting process where fees are applicabl
         "value": {
           "currency": "GBP",
           "amount": 8.00,
-          "description": "Fee payable for both soft and hard copies of documents. "
+          "description": "Fee payable for both soft and hard copies of documents."
+          "methodOfPayment":["electronic","cheque"]
         }
       },
       {
-        "type": "submission",
+        "type": ["submission"],
         "value": {
           "currency": "GBP",
           "amount": 10.00,
-          "description": "Fee payable within e-procurement system."
+          "description": "Fee payable within e-procurement system.",
+          "methodOfPayment":["electronic"]
         }
       }
     ]

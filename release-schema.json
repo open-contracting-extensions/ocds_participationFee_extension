@@ -31,9 +31,12 @@
           "type": "string"
         },
         "methodOfPayment":{
-          "title":"Method of payment",
+          "title":"Method(s) of payment",
           "description":"Optional information about the way in which fees can be paid.",
-          "type":"string"
+          "type":["array","null"],
+          "items":{
+            "type":"string"
+          }
         }
       }
     },
