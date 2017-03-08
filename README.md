@@ -43,7 +43,7 @@ The following JSON snippet models a contracting process where fees are applicabl
         "value": {
           "currency": "GBP",
           "amount": 8.00,
-          "description": "Fee payable for both soft and hard copies of documents."
+          "description": "Fee payable for both soft and hard copies of documents.",
           "methodOfPayment":["electronic","cheque"]
         }
       },
