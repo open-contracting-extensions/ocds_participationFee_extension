@@ -70,4 +70,4 @@ In this case, the fee should be modelled as a **submission** fee, as submission 
 ## To do
 
 * participation / submission terminology
-* finalise codelist
+* finalize codelist
