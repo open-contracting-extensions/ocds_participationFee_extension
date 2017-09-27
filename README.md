@@ -71,3 +71,7 @@ In this case, the fee should be modelled as a **submission** fee, as submission 
 
 * participation / submission terminology
 * finalize codelist
+
+## Issues
+
+Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
