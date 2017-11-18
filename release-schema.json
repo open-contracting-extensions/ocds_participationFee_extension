@@ -12,7 +12,12 @@
             "null"
           ],
           "items": {
-            "type": "string",
+            "type": [
+              "string",
+              "null"
+            ],
+            "codelist": "participationFeeType.csv",
+            "openCodelist": false,
             "enum": [
               "document",
               "deposit",
