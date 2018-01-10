@@ -35,12 +35,15 @@
           "description": "Optional information about the way in which fees are levied, or the exact nature of the fees.",
           "type": "string"
         },
-        "methodOfPayment":{
-          "title":"Method(s) of payment",
-          "description":"Optional information about the way in which fees can be paid.",
-          "type":["array","null"],
-          "items":{
-            "type":"string"
+        "methodOfPayment": {
+          "title": "Method(s) of payment",
+          "description": "Optional information about the way in which fees can be paid.",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
           }
         }
       }
