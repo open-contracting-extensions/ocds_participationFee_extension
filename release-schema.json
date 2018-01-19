@@ -34,7 +34,10 @@
         "description": {
           "title": "Description",
           "description": "Optional information about the way in which fees are levied, or the exact nature of the fees.",
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "methodOfPayment": {
           "title": "Method(s) of payment",
