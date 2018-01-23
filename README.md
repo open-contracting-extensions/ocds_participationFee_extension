@@ -10,20 +10,20 @@ Procurement monitors may wish to ensure that participation fees are within legal
 
 ## Extension fields
 
-This extension adds a ```participationFees``` field to the ```tender``` section of OCDS and introduces a new ```participationFee``` building block.
+This extension adds a `participationFees` field to the `tender` section of OCDS and introduces a new `participationFee` building block.
 
-The ```participationFees``` field is an array of ```participationFee``` building blocks.
+The `participationFees` field is an array of `participationFee` building blocks.
 
-The ```participationFee``` building block is made up of three fields:
+The `participationFee` building block is made up of three fields:
 
-* ```type``` - a value from the ```participationFeeType``` codelist, describing the type of the fee
-* ```value``` - the amount and currency of the fee
-* ```description``` - an optional field with more information on the fee requirements. For example, sometimes a document fee is only applicable to the hard copy of the documents.
-* ```methodOfPayment``` - an optional field providing information on methods of payment accepted for the documentation. This is currently an array of strings, but an open codelist may be introduced in future.
+* `type` - a value from the `participationFeeType` codelist, describing the type of the fee
+* `value` - the amount and currency of the fee
+* `description` - an optional field with more information on the fee requirements. For example, sometimes a document fee is only applicable to the hard copy of the documents.
+* `methodOfPayment` - an optional field providing information on methods of payment accepted for the documentation. This is currently an array of strings, but an open codelist may be introduced in future.
 
 ## Extension codelists
 
-This extension adds **closed** ```participationFeeType``` codelist with the following codes:
+This extension adds **closed** `participationFeeType` codelist with the following codes:
 
 * document - a fee payable for access to bidding documents
 * deposit - a refundable fee payable for the submission of bids
