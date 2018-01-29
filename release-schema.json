@@ -2,6 +2,7 @@
   "definitions": {
     "ParticipationFee": {
       "title": "Participation fee",
+      "description": "A fee applicable to bidders wishing to participate in the tender process. Fees may apply for access to bidding documents, for the submission of bids or there may be a win fee payable by the successful bidder.",
       "type": "object",
       "properties": {
         "id": {
@@ -29,6 +30,8 @@
           "openCodelist": false
         },
         "value": {
+          "title": "Value",
+          "description": "The monetary value of this fee.",
           "$ref": "#/definitions/Value"
         },
         "description": {
