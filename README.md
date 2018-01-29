@@ -73,8 +73,11 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ## Changelog
 
+### v1.1.3
+
 * Disallow `ParticipationFee.type` from having null in its array of strings
 * Allow `ParticipationFee.description` to be null
+* Add `ParticipationFee.id` field
 * Add description to `ParticipationFee`
 * Add title and description to `ParticipationFee.value`
 * Add participationFeeType.csv codelist for `ParticipationFee.type`
