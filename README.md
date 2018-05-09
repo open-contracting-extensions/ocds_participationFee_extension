@@ -34,7 +34,7 @@ This extension adds **closed** `participationFeeType` codelist with the followin
 
 The following JSON snippet models a contracting process where fees are applicable for both access to documents and submission of bids:
 
-```JSON
+```json
 {
   "tender": {
     "participationFees": [
