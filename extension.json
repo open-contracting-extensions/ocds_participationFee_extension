@@ -6,7 +6,7 @@
     "en": "Where a tender process involves payment of fees to access documents, submit a proposal, or be awarded a contract, this extension can be used to provide fee details."
   },
   "documentationUrl": {
-    "en": "http://standard.open-contracting.org/1.1/en/extensions/participation_fee/"
+    "en": "https://extensions.open-contracting.org/en/extensions/participation_fee/"
   },
   "compatibility": [
     "1.1"
