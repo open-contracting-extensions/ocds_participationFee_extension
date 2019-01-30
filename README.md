@@ -73,6 +73,10 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ## Changelog
 
+### v1.1.4
+
+* Update `mergeStrategy` property to `wholeListMerge` property
+
 ### v1.1.3
 
 * Disallow `ParticipationFee.type` from having null in its array of strings

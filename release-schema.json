@@ -61,11 +61,11 @@
           "title": "Participation fees",
           "description": "Any fees applicable to bidders wishing to participate in the tender process. Fees may apply for access to bidding documents, for the submission of bids or there may be a win fee payable by the successful bidder.",
           "type": "array",
-          "mergeStrategy": "ocdsVersion",
           "items": {
             "$ref": "#/definitions/ParticipationFee"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "wholeListMerge": true
         }
       }
     }
