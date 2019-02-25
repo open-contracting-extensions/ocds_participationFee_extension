@@ -76,6 +76,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 ### v1.1.4
 
 * Update `mergeStrategy` property to `wholeListMerge` property
+* Update extension.json for Extension Explorer
 
 ### v1.1.3
 
