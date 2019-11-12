@@ -1,44 +1,23 @@
 # Participation fees
 
-## Background
+This extension adds a participation fees array to the tender object, to disclose any participation fees for the contracting process.
 
-There are a number of cases where there may be costs to access documents for, or to participate within, a tender process.
+The `id` field will be required in future versions of the extension.
 
-Potential bidders will want to be aware of the fees that a process might involve.
+## Context
 
-Procurement monitors may wish to ensure that participation fees are within legal parameters (often set as a fixed maximum, or a percentage of total contract value), or to monitor how participation fees are being used.
-
-## Extension fields
-
-This extension adds a `participationFees` field to the `tender` section of OCDS and introduces a new `participationFee` building block.
-
-The `participationFees` field is an array of `participationFee` building blocks.
-
-The `participationFee` building block is made up of three fields:
-
-* `type` - a value from the `participationFeeType` codelist, describing the type of the fee
-* `value` - the amount and currency of the fee
-* `description` - an optional field with more information on the fee requirements. For example, sometimes a document fee is only applicable to the hard copy of the documents.
-* `methodOfPayment` - an optional field providing information on methods of payment accepted for the documentation. This is currently an array of strings, but an open codelist may be introduced in future.
-
-## Extension codelists
-
-This extension adds **closed** `participationFeeType` codelist with the following codes:
-
-* document - a fee payable for access to bidding documents
-* deposit - a refundable fee payable for the submission of bids
-* submission - a non-refundable fee payable for the submission of bids
-* win - a fee payable by the winning bidder
+There are sometimes costs involved in accessing bidding documents relating to a contracting process, or in otherwise participating in a contracting process. Potential bidders want to know about such fees. Procurement monitors might also want to ensure that participation fees are within legal parameters (often set as a fixed maximum value, or as a percentage of the total contract value) or to monitor how participation fees are being used.
 
 ## Example
 
-The following JSON snippet models a contracting process where fees are applicable for both access to documents and submission of bids:
+The following JSON snippet models a contracting process where fees are applied to access bidding documents and to submit bids:
 
 ```json
 {
   "tender": {
     "participationFees": [
       {
+        "id": "1",
         "type": "document",
         "value": {
           "currency": "GBP",
@@ -48,6 +27,7 @@ The following JSON snippet models a contracting process where fees are applicabl
           "methodOfPayment":["electronic","cheque"]
       },
       {
+        "id": "2",
         "type": ["submission"],
         "value": {
           "currency": "GBP",
@@ -63,15 +43,21 @@ The following JSON snippet models a contracting process where fees are applicabl
 
 ## Usage notes
 
-In some cases, a fee may be levied for 'official copies' of procurement documents (although copies may also be available freely online), and bidders required to prove they have paid for an official copy of the documents as part of their submission.
-
-In this case, the fee should be modelled as a **submission** fee, as submission is only possible when this document access fee has been paid.
+In some cases, a fee can be levied for 'official copies' of procurement documents (although copies can also be available freely online), and bidders might be required to prove that they have paid for an official copy of the documents as part of their submission. In this case, the fee should be modelled as a **submission** fee, as submission is only possible when this document access fee has been paid.
 
 ## Issues
 
 Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
 
 ## Changelog
+
+### Unreleased
+
+* Add `id` field to example in readme
+* Fix description of `ParticipationFee.type` field
+* Merge and reconcile field and code descriptions with schema and codelist
+* Remove indication of fields as "optional"
+* Use non-normative keywords where appropriate
 
 ### v1.1.4
 
