@@ -21,20 +21,27 @@ The following JSON snippet models a contracting process where fees are applied t
         "type": "document",
         "value": {
           "currency": "GBP",
-          "amount": 8.00
+          "amount": 8.0
         },
         "description": "Fee payable for both soft and hard copies of documents.",
-          "methodOfPayment":["electronic","cheque"]
+        "methodOfPayment": [
+          "electronic",
+          "cheque"
+        ]
       },
       {
         "id": "2",
-        "type": ["submission"],
+        "type": [
+          "submission"
+        ],
         "value": {
           "currency": "GBP",
-          "amount": 10.00
+          "amount": 10.0
         },
         "description": "Fee payable within e-procurement system.",
-        "methodOfPayment":["electronic"]
+        "methodOfPayment": [
+          "electronic"
+        ]
       }
     ]
   }
