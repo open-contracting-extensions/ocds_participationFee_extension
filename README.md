@@ -18,7 +18,9 @@ The following JSON snippet models a contracting process where fees are applied t
     "participationFees": [
       {
         "id": "1",
-        "type": "document",
+        "type": [
+          "document"
+        ],
         "value": {
           "currency": "GBP",
           "amount": 8.0
