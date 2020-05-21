@@ -12,7 +12,8 @@
     "1.1"
   ],
   "codelists": [
-    "participationFeeType.csv"
+    "participationFeeType.csv",
+    "methodOfPayment"
   ],
   "schemas": [
     "release-schema.json"

@@ -27,7 +27,7 @@ The following JSON snippet models a contracting process where fees are applied t
         },
         "description": "Fee payable for both soft and hard copies of documents.",
         "methodOfPayment": [
-          "electronic",
+          "wireTransfer",
           "cheque"
         ]
       },
@@ -42,7 +42,7 @@ The following JSON snippet models a contracting process where fees are applied t
         },
         "description": "Fee payable within e-procurement system.",
         "methodOfPayment": [
-          "electronic"
+          "wireTransfer"
         ]
       }
     ]
