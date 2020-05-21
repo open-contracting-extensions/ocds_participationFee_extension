@@ -1,0 +1,6 @@
+Code,Title,Description
+cash,Cash,The payment associated with this contract was made through cash.
+check,Check,The payment associated with this contract was made by check.
+wireTransfer,Wire transfer,The payment associated with this contract was made through a bank transfer.
+corporateCard,Corporate card,The payment associated with this contract was made through a corporate credit card. Usually used to purchasing items directly for goods and services in the course of operations.
+letterOfCredit,Letter of credit,The payment associated with this contract was made through a letter of credit. Letters of credit are used to guarantee that a supplier will receive a specified amount of money within a specified time providing strict terms.

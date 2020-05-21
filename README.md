@@ -67,6 +67,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 * Merge and reconcile field and code descriptions with schema and codelist
 * Remove indication of fields as "optional"
 * Use non-normative keywords where appropriate
+* Add `methodOfPayment` codelist from [paymentMethod extension](https://github.com/INAImexico/ocds_paymentMethod_extension/blob/master/codelists/paymentMethod.csv)
 
 ### v1.1.4
 
