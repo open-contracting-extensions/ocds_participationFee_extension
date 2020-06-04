@@ -12,7 +12,7 @@
         },
         "type": {
           "title": "Fee type",
-          "description": "The type of this fee, from the closed participationFeeType codelist.",
+          "description": "The type of this fee.",
           "type": [
             "array",
             "null"
