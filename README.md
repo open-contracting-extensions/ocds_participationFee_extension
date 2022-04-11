@@ -60,6 +60,10 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ## Changelog
 
+### Unreleased
+
+* Make `ParticipationFee.id` required so that participation fees are merged by identifier
+
 ### v1.1.5
 
 * Add `id` field to example in readme
