@@ -1,6 +1,6 @@
 # Participation fees
 
-This extension adds a participation fees array to the tender object, to disclose any participation fees for the contracting process.
+This extension adds a participation fees array to the `Tender` and `Lot` objects, to disclose any participation fees for the contracting process.
 
 The `id` field will be required in future versions of the extension.
 
@@ -8,7 +8,13 @@ The `id` field will be required in future versions of the extension.
 
 There are sometimes costs involved in accessing bidding documents relating to a contracting process, or in otherwise participating in a contracting process. Potential bidders want to know about such fees. Procurement monitors might also want to ensure that participation fees are within legal parameters (often set as a fixed maximum value, or as a percentage of the total contract value) or to monitor how participation fees are being used.
 
-## Example
+## Legal context
+
+In the European Union, this extension's fields correspond to eForms [BT-14 (Documents Restricted), BT-615 (Documents Restricted URL) and BT-707 (Documents Restricted Justification)](https://docs.ted.europa.eu/eforms/latest/reference/business-terms/). See [OCDS for eForms](https://standard.open-contracting.org/profiles/eforms/latest/en/) for the correspondences to eForms fields. See [OCDS for the European Union](http://standard.open-contracting.org/profiles/eu/master/en/) for the correspondences to Tenders Electronic Daily (TED).
+
+## Examples
+
+### Tender
 
 The following JSON snippet models a contracting process where fees are applied to access bidding documents and to submit bids:
 
@@ -50,6 +56,31 @@ The following JSON snippet models a contracting process where fees are applied t
 }
 ```
 
+### Lot
+
+The following JSON snippet models a contracting process where access to documents are restricted:
+
+```json
+{
+  "tender": {
+    "lots": [
+      {
+        "id": "LOT-0001",
+        "participationFees": [
+          {
+            "id": "1",
+            "type": [
+              "document"
+            ],
+            "description": "Intellectual property right issues - https://mywebsite.com/proc/2019024/accessinfo"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
 ## Usage notes
 
 In some cases, a fee can be levied for 'official copies' of procurement documents (although copies can also be available freely online), and bidders might be required to prove that they have paid for an official copy of the documents as part of their submission. In this case, the fee should be modelled as a **submission** fee, as submission is only possible when this document access fee has been paid.
@@ -59,6 +90,10 @@ In some cases, a fee can be levied for 'official copies' of procurement document
 Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
 
 ## Changelog
+
+### 2023-03-02
+
+* Add `ParticipationFee` object to `Lot`
 
 ### Unreleased
 
