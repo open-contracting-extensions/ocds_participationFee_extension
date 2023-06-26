@@ -4,7 +4,7 @@ This extension adds a participation fees array to the tender object, to disclose
 
 There are sometimes costs involved in accessing bidding documents relating to a contracting process, or in otherwise participating in a contracting process. Potential bidders want to know about such fees. Procurement monitors might also want to ensure that participation fees are within legal parameters (often set as a fixed maximum value, or as a percentage of the total contract value) or to monitor how participation fees are being used.
 
-## Usage
+## Guidance
 
 The `id` field will be required in future versions of the extension.
 
