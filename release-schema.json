@@ -55,9 +55,9 @@
           "items": {
             "type": "string"
           },
-          "uniqueItems": true,
           "codelist": "methodOfPayment.csv",
-          "openCodelist": true
+          "openCodelist": true,
+          "uniqueItems": true
         }
       }
     },
