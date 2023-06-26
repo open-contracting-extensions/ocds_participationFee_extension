@@ -2,11 +2,13 @@
 
 This extension adds a participation fees array to the tender object, to disclose any participation fees for the contracting process.
 
+There are sometimes costs involved in accessing bidding documents relating to a contracting process, or in otherwise participating in a contracting process. Potential bidders want to know about such fees. Procurement monitors might also want to ensure that participation fees are within legal parameters (often set as a fixed maximum value, or as a percentage of the total contract value) or to monitor how participation fees are being used.
+
+## Usage
+
 The `id` field will be required in future versions of the extension.
 
-## Context
-
-There are sometimes costs involved in accessing bidding documents relating to a contracting process, or in otherwise participating in a contracting process. Potential bidders want to know about such fees. Procurement monitors might also want to ensure that participation fees are within legal parameters (often set as a fixed maximum value, or as a percentage of the total contract value) or to monitor how participation fees are being used.
+In some cases, a fee is levied for official copies of procurement documents, with unofficial copies being freely available. Bidders might be required to prove that they have paid for official copies as part of their submission. In such cases, the fee should use the 'submission' code in the `type` field, rather than the 'document' code.
 
 ## Example
 
@@ -49,10 +51,6 @@ The following JSON snippet models a contracting process where fees are applied t
   }
 }
 ```
-
-## Usage notes
-
-In some cases, a fee can be levied for 'official copies' of procurement documents (although copies can also be available freely online), and bidders might be required to prove that they have paid for an official copy of the documents as part of their submission. In this case, the fee should be modelled as a **submission** fee, as submission is only possible when this document access fee has been paid.
 
 ## Issues
 
