@@ -52,6 +52,32 @@ The following JSON snippet models a contracting process where fees are applied t
 }
 ```
 
+The following JSON snippet models a contracting process where fees are calculated as a percentage of the awarded contract value.
+
+```json
+{
+  "tender": {
+    "participationFees": [
+      {
+        "id": "1",
+        "type": [
+          "win"
+        ],
+        "relativeValue": {
+          "percentage": 0.05,
+          "monetaryValue": "award"
+        },
+        "description": "Fee payable on acceptance of award.",
+        "methodOfPayment": [
+          "wireTransfer",
+          "cheque"
+        ]
+      }
+    ]
+  }
+}
+```
+
 ## Issues
 
 Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
@@ -61,6 +87,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 ### Unreleased
 
 * Make `ParticipationFee.id` required so that participation fees are merged by identifier
+* Add `relativeValue` field
 
 ### v1.1.5
 
