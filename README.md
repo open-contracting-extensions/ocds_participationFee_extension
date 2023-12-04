@@ -64,7 +64,7 @@ The following JSON snippet models a contracting process with a participation fee
           "win"
         ],
         "relativeValue": {
-          "percentage": 0.05,
+          "proportion": 0.05,
           "monetaryValue": "award"
         },
         "description": "Fee payable on acceptance of award.",
