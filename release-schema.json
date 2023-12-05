@@ -37,6 +37,11 @@
           "description": "The monetary value of this fee.",
           "$ref": "#/definitions/Value"
         },
+        "relativeValue": {
+          "title": "Relative value",
+          "description": "The value of the participation fee, as a proportion of a monetary value.",
+          "$ref": "#/definitions/RelativeValue"
+        },
         "description": {
           "title": "Description",
           "description": "Additional information about this fee, for example: the specific cases in which the fee is applicable (e.g. hard copies of documents only), the way in which the fee is levied, or the exact nature of the fee.",
@@ -71,6 +76,38 @@
             "$ref": "#/definitions/ParticipationFee"
           },
           "uniqueItems": true
+        }
+      }
+    },
+    "RelativeValue": {
+      "title": "Relative value",
+      "description": "The value of the participation fee, as a proportion of a monetary value.",
+      "type": "object",
+      "required": [
+        "proportion",
+        "monetaryValue"
+      ],
+      "properties": {
+        "proportion": {
+          "title": "Proportion",
+          "description": "The proportion of the monetary value, expressed as a decimal between 0 and 1.",
+          "type": [
+            "number"
+          ],
+          "maximum": 1,
+          "minimum": 0,
+          "exclusiveMinimum": true
+        },
+        "monetaryValue": {
+          "title": "Monetary value",
+          "description": "The name of the monetary value.",
+          "type": "string",
+          "enum": [
+            "tender",
+            "award"
+          ],
+          "codelist": "monetaryValue.csv",
+          "openCodelist": false
         }
       }
     }
