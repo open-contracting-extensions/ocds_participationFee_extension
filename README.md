@@ -10,9 +10,9 @@ The `id` field will be required in future versions of the extension.
 
 In some cases, a fee is levied for official copies of procurement documents, with unofficial copies being freely available. Bidders might be required to prove that they have paid for official copies as part of their submission. In such cases, the fee should use the 'submission' code in the `type` field, rather than the 'document' code.
 
-## Example
+## Examples
 
-The following JSON snippet models a contracting process where fees are applied to access bidding documents and to submit bids:
+A contracting process where fees are applied to access bidding documents and to submit bids:
 
 ```json
 {
