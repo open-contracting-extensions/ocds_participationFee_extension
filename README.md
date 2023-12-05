@@ -52,7 +52,7 @@ The following JSON snippet models a contracting process where fees are applied t
 }
 ```
 
-The following JSON snippet models a contracting process with a participation fee of 5% of the award value, payable by the winning bidder.
+A participation fee of 5% of the award value, payable by the winning bidder:
 
 ```json
 {

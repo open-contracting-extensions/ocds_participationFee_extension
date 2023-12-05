@@ -39,7 +39,7 @@
         },
         "relativeValue": {
           "title": "Relative value",
-          "description": "The value of the participation fee, as a proportion of the monetary value.",
+          "description": "The value of the participation fee, as a proportion of a monetary value.",
           "$ref": "#/definitions/RelativeValue"
         },
         "description": {
@@ -90,7 +90,7 @@
       "properties": {
         "proportion": {
           "title": "Proportion",
-          "description": "The percentage of the monetary value, expressed as a decimal proportion between 0 and 1.",
+          "description": "The proportion of the monetary value, expressed as a decimal between 0 and 1.",
           "type": [
             "number"
           ],
