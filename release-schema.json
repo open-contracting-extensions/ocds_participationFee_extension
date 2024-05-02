@@ -63,6 +63,16 @@
           "codelist": "methodOfPayment.csv",
           "openCodelist": true,
           "uniqueItems": true
+        },
+        "payee": {
+          "title": "Payee",
+          "description": "The organization that receives the participation fees.",
+          "$ref": "#/definitions/OrganizationReference"
+        },
+        "paymentAddress": {
+          "title": "Payment address",
+          "description": "The address to which non-electronic participation fees should be submitted.",
+          "$ref": "#/definitions/Address"
         }
       }
     },

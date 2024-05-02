@@ -31,7 +31,16 @@ A contracting process where fees are applied to access bidding documents and to 
         "methodOfPayment": [
           "wireTransfer",
           "cheque"
-        ]
+        ],
+        "payee": {
+          "id": "ORG-0001",
+          "name": "Highway Division"
+        },
+        "paymentAddress": {
+          "locality": "Jawali",
+          "region": "Himachal Pradesh",
+          "countryName": "India"
+        }
       },
       {
         "id": "2",
@@ -45,7 +54,11 @@ A contracting process where fees are applied to access bidding documents and to 
         "description": "Fee payable within e-procurement system.",
         "methodOfPayment": [
           "wireTransfer"
-        ]
+        ],
+        "payee": {
+          "id": "ORG-0001",
+          "name": "Highway Division"
+        }
       }
     ]
   }
@@ -88,6 +101,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 * Make `ParticipationFee.id` required so that participation fees are merged by identifier
 * Add `relativeValue` field
+* Add `payee` and `paymentAddress` fields
 
 ### v1.1.5
 
