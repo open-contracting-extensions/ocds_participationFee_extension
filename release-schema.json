@@ -10,12 +10,12 @@
       "properties": {
         "id": {
           "title": "Fee ID",
-          "description": "A local identifier for this fee, unique within this block. This field is used to keep track of multiple revisions of a fee through the compilation from release to record mechanism.",
+          "description": "The locally unique identifier for the fee.",
           "type": "string"
         },
         "type": {
           "title": "Fee type",
-          "description": "The type of this fee.",
+          "description": "The type of the fee.",
           "type": [
             "array",
             "null"
@@ -34,17 +34,17 @@
         },
         "value": {
           "title": "Value",
-          "description": "The monetary value of this fee.",
+          "description": "The monetary value of the fee.",
           "$ref": "#/definitions/Value"
         },
         "relativeValue": {
           "title": "Relative value",
-          "description": "The value of the participation fee, as a proportion of a monetary value.",
+          "description": "The value of the fee, as a proportion of a monetary value.",
           "$ref": "#/definitions/RelativeValue"
         },
         "description": {
           "title": "Description",
-          "description": "Additional information about this fee, for example: the specific cases in which the fee is applicable (e.g. hard copies of documents only), the way in which the fee is levied, or the exact nature of the fee.",
+          "description": "Additional information about the fee, for example: the specific cases in which the fee is applicable (e.g. hard copies of documents only), the way in which the fee is levied, or the exact nature of the fee.",
           "type": [
             "string",
             "null"
@@ -52,7 +52,7 @@
         },
         "methodOfPayment": {
           "title": "Payment methods",
-          "description": "The accepted ways in which fees can be paid.",
+          "description": "The accepted ways to pay the fee.",
           "type": [
             "array",
             "null"
@@ -66,12 +66,12 @@
         },
         "paymentAddress": {
           "title": "Payment address",
-          "description": "The physical address to which to submit non-electronic participation payments.",
+          "description": "The physical address to which to submit non-electronic payments.",
           "$ref": "#/definitions/Address"
         },
         "payee": {
           "title": "Payee",
-          "description": "The organization that receives the participation fee.",
+          "description": "The organization that receives the fee.",
           "$ref": "#/definitions/OrganizationReference"
         }
       }
