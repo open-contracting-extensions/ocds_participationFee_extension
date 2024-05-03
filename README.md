@@ -100,8 +100,10 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 ### Unreleased
 
 * Make `ParticipationFee.id` required so that participation fees are merged by identifier
-* Add `relativeValue` field
-* Add `payee` and `paymentAddress` fields
+* Add fields:
+  * `relativeValue`
+  * `payee`
+  * `paymentAddress`
 
 ### v1.1.5
 

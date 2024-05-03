@@ -51,7 +51,7 @@
           ]
         },
         "methodOfPayment": {
-          "title": "Method(s) of payment",
+          "title": "Payment methods",
           "description": "The accepted ways in which fees can be paid.",
           "type": [
             "array",
@@ -64,15 +64,15 @@
           "openCodelist": true,
           "uniqueItems": true
         },
-        "payee": {
-          "title": "Payee",
-          "description": "The organization that receives the participation fees.",
-          "$ref": "#/definitions/OrganizationReference"
-        },
         "paymentAddress": {
           "title": "Payment address",
-          "description": "The address to which non-electronic participation fees should be submitted.",
+          "description": "The physical address to which to submit non-electronic participation payments.",
           "$ref": "#/definitions/Address"
+        },
+        "payee": {
+          "title": "Payee",
+          "description": "The organization that receives the participation fee.",
+          "$ref": "#/definitions/OrganizationReference"
         }
       }
     },
