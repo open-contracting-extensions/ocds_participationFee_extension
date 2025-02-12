@@ -127,5 +127,5 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 * Add `ParticipationFee.id` field
 * Add description to `ParticipationFee`
 * Add title and description to `ParticipationFee.value`
-* Add participationFeeType.csv codelist for `ParticipationFee.type`
+* Add a `participationFeeType.csv` codelist for `ParticipationFee.type`
 * Add tests and tidy code
